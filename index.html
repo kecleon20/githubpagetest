@@ -59,6 +59,41 @@
             border-image-source: linear-gradient(to bottom right, #0077b5, #333);
         }
         
+        /* Cuadro de cita */
+        .quote-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote-box:before {
+            content: '"';
+            font-size: 3em;
+            color: #3498db;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            line-height: 1;
+        }
+        
+        .quote-box p {
+            margin: 0;
+            padding-left: 20px;
+        }
+        
+        .quote-author {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #2c3e50;
+        }
+        
         /* Título */
         h1 {
             color: #2c3e50;
@@ -145,6 +180,12 @@
         <div class="left-section">
             <!-- Reemplaza "tu-foto.jpg" con la ruta de tu imagen -->
             <img src="yo.jpg" alt="Thiago Chevallet" class="profile-photo gradient-border">
+            
+            <!-- Cuadro de cita -->
+            <div class="quote-box">
+                <p>"Tu trabajo va a llenar gran parte de tu vida, la única manera de estar realmente satisfecho es hacer lo que creas que es un gran trabajo. Y la única manera de hacer un gran trabajo es amar lo que haces".</p>
+                <div class="quote-author">- Steve Jobs. Discurso en la Universidad de Stanford, 2005</div>
+            </div>
         </div>
         
         <div class="right-section">
